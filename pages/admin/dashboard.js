@@ -37,7 +37,8 @@ import {
   Row,
   Col,
 } from "reactstrap";
-
+// layout for this page
+import Admin from "layouts/Admin.js";
 // core components
 import {
   chartOptions,
@@ -48,7 +49,7 @@ import {
 
 import Header from "components/Headers/Header.js";
 
-class Index extends React.Component {
+class Dashboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -345,4 +346,6 @@ class Index extends React.Component {
   }
 }
 
-export default Index;
+Dashboard.layout = Admin;
+
+export default Dashboard;

@@ -32,6 +32,8 @@ import {
   Row,
   Col,
 } from "reactstrap";
+// layout for this page
+import Auth from "layouts/Auth.js";
 
 class Register extends React.Component {
   render() {
@@ -158,5 +160,7 @@ class Register extends React.Component {
     );
   }
 }
+
+Register.layout = Auth;
 
 export default Register;

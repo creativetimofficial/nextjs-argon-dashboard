@@ -30,6 +30,8 @@ import {
   Row,
   Col,
 } from "reactstrap";
+// layout for this page
+import Admin from "layouts/Admin.js";
 // core components
 import UserHeader from "components/Headers/UserHeader.js";
 
@@ -328,5 +330,7 @@ class Profile extends React.Component {
     );
   }
 }
+
+Profile.layout = Admin;
 
 export default Profile;

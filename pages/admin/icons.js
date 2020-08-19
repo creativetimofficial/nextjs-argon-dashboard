@@ -28,6 +28,8 @@ import {
   Col,
   UncontrolledTooltip,
 } from "reactstrap";
+// layout for this page
+import Admin from "layouts/Admin.js";
 // core components
 import Header from "components/Headers/Header.js";
 
@@ -2898,5 +2900,7 @@ class Icons extends React.Component {
     );
   }
 }
+
+Icons.layout = Admin;
 
 export default Icons;

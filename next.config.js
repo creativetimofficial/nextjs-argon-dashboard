@@ -2,13 +2,16 @@ const withPlugins = require("next-compose-plugins");
 const withImages = require("next-images");
 const withSass = require("@zeit/next-sass");
 const withCSS = require("@zeit/next-css");
-const withFonts = require('next-fonts');
+const withFonts = require("next-fonts");
 const webpack = require("webpack");
 const path = require("path");
 
-module.exports = withPlugins([[withSass], [withImages], [withCSS], [withFonts]], {
-  webpack(config, options) {
-    config.resolve.modules.push(path.resolve("./"));
-    return config;
-  },
-});
+module.exports = withPlugins(
+  [[withSass], [withImages], [withFonts], [withCSS]],
+  {
+    webpack(config, options) {
+      config.resolve.modules.push(path.resolve("./"));
+      return config;
+    },
+  }
+);

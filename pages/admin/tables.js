@@ -37,6 +37,8 @@ import {
   Row,
   UncontrolledTooltip,
 } from "reactstrap";
+// layout for this page
+import Admin from "layouts/Admin.js";
 // core components
 import Header from "components/Headers/Header.js";
 
@@ -1655,5 +1657,7 @@ class Tables extends React.Component {
     );
   }
 }
+
+Tables.layout = Admin;
 
 export default Tables;

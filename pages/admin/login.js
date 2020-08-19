@@ -32,6 +32,8 @@ import {
   Row,
   Col,
 } from "reactstrap";
+// layout for this page
+import Auth from "layouts/Auth.js";
 
 class Login extends React.Component {
   render() {
@@ -153,5 +155,7 @@ class Login extends React.Component {
     );
   }
 }
+
+Login.layout = Auth;
 
 export default Login;
