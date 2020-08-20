@@ -77,7 +77,7 @@ function Sidebar(props) {
       return (
         <NavItem key={key}>
           <Link href={prop.layout + prop.path}>
-            <NavLink onClick={closeCollapse} activeClassName="active">
+            <NavLink onClick={closeCollapse}>
               <i className={prop.icon} />
               {prop.name}
             </NavLink>
@@ -109,7 +109,7 @@ function Sidebar(props) {
         </button>
         {/* Brand */}
         {logo && logo.innerLink ? (
-          <Link href={logo.innerLink}>{navbarBrand}</Link>
+          <Link href={logo.innerLink}><span>{navbarBrand}</span></Link>
         ) : null}
         {logo && logo.outterLink ? (
           <a href={logo.innerLink} target="_blank">
