@@ -40,12 +40,14 @@ class AdminNavbar extends React.Component {
         >
           <Container className="px-4">
             <Link href="/">
-              <NavbarBrand href="#pablo">
-                <img
-                  alt="..."
-                  src={require("assets/img/brand/nextjs_argon_white.png")}
-                />
-              </NavbarBrand>
+              <span>
+                <NavbarBrand href="#pablo">
+                  <img
+                    alt="..."
+                    src={require("assets/img/brand/nextjs_argon_white.png")}
+                  />
+                </NavbarBrand>
+              </span>
             </Link>
             <button className="navbar-toggler" id="navbar-collapse-main">
               <span className="navbar-toggler-icon" />
