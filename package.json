@@ -5,7 +5,7 @@
   "scripts": {
     "start": "next start",
     "build": "next build",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run dev",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && rm -rf out/ && npm install && npm run dev",
     "compile-sass": "node-sass assets/scss/argon-dashboard-react.scss assets/css/argon-dashboard-react.css",
     "minify-sass": "node-sass assets/scss/argon-dashboard-react.scss assets/css/argon-dashboard-react.min.css --output-style compressed",
     "map-sass": "node-sass assets/scss/argon-dashboard-react.scss assets/css/argon-dashboard-react.css --source-map true",
@@ -33,5 +33,10 @@
     "react-google-maps": "9.4.5",
     "reactstrap": "8.5.1",
     "webpack": "4.44.1"
+  },
+  "optionalDependencies": {
+    "@types/googlemaps": "3.39.13",
+    "@types/markerclustererplus": "2.1.33",
+    "@types/react": "16.9.46"
   }
 }
