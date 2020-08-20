@@ -22,7 +22,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
             rel="stylesheet"
           />
-          <title>NextJS Argon Dashboard by Creative Tim</title>
         </Head>
         <body>
           <Main />
