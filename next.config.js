@@ -6,12 +6,21 @@ const withFonts = require("next-fonts");
 const webpack = require("webpack");
 const path = require("path");
 
-module.exports = withPlugins(
-  [[withSass], [withImages], [withFonts], [withCSS]],
-  {
-    webpack(config, options) {
-      config.resolve.modules.push(path.resolve("./"));
-      return config;
-    },
-  }
+module.exports = withFonts(
+  withCSS(
+    withImages(
+      withSass({
+        webpack(config, options) {
+          config.module.rules.push({
+            test: /\.(eot|ttf|woff|woff2)$/,
+            use: {
+              loader: "url-loader",
+            },
+          });
+          config.resolve.modules.push(path.resolve("./"));
+          return config;
+        },
+      })
+    )
+  )
 );
