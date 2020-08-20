@@ -29,10 +29,11 @@ import routes from "routes.js";
 function Admin(props) {
   // used for checking current route
   const router = useRouter();
+  let mainContentRef = React.createRef();
   React.useEffect(() => {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
-    this.refs.mainContent.scrollTop = 0;
+    mainContentRef.current.scrollTop = 0;
   }, []);
   const getBrandText = () => {
     for (let i = 0; i < routes.length; i++) {
@@ -53,11 +54,8 @@ function Admin(props) {
           imgAlt: "...",
         }}
       />
-      <div className="main-content" ref="mainContent">
-        <AdminNavbar
-          {...props}
-          brandText={getBrandText()}
-        />
+      <div className="main-content" ref={mainContentRef}>
+        <AdminNavbar {...props} brandText={getBrandText()} />
         {props.children}
         <Container fluid>
           <AdminFooter />
