@@ -23,8 +23,8 @@ import Router from "next/router";
 
 // import PageChange from "components/PageChange/PageChange.js";
 
-// import "assets/plugins/nucleo/css/nucleo.css";
-// import "@fortawesome/fontawesome-free/css/all.min.css";
+import "assets/plugins/nucleo/css/nucleo.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import "assets/scss/argon-dashboard-react.scss";
 
 // Router.events.on("routeChangeStart", (url) => {
