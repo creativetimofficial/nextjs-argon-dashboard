@@ -57,7 +57,13 @@ If you want to get inspiration or just show something directly to your clients, 
 
 ## Demo
 
+- [Start page](https://demos.creative-tim.com/nextjs-argon-dashboard/admin/dashboard)
+- [User profile page](https://demos.creative-tim.com/nextjs-argon-dashboard/admin/profile)
+- [Tables page ](https://demos.creative-tim.com/nextjs-argon-dashboard/admin/tables)
+- [Maps Page](https://demos.creative-tim.com/nextjs-argon-dashboard/admin/maps)
+- [Login page](https://demos.creative-tim.com/nextjs-argon-dashboard/auth/login)
 
+[View More](https://demos.creative-tim.com/nextjs-argon-dashboard/admin/dashboard).
 
 
 ## Quick start
