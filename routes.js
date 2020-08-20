@@ -18,7 +18,7 @@
 
 var routes = [
   {
-    path: "/index",
+    path: "/dashboard",
     name: "Dashboard",
     icon: "ni ni-tv-2 text-primary",
     layout: "/admin",
@@ -36,7 +36,7 @@ var routes = [
     layout: "/admin",
   },
   {
-    path: "/user-profile",
+    path: "/profile",
     name: "User Profile",
     icon: "ni ni-single-02 text-yellow",
     layout: "/admin",
