@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "argon-dashboard-react.css",
+	"file": "nextjs-argon-dashboard.css",
 	"sources": [
-		"../scss/argon-dashboard-react.scss",
+		"../scss/nextjs-argon-dashboard.scss",
 		"../scss/argon-dashboard/custom/_functions.scss",
 		"../scss/argon-dashboard/bootstrap/_functions.scss",
 		"../scss/argon-dashboard/custom/_variables.scss",

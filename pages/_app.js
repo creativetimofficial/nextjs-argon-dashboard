@@ -8,7 +8,7 @@ import Router from "next/router";
 
 import "assets/plugins/nucleo/css/nucleo.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "assets/scss/argon-dashboard-react.scss";
+import "assets/scss/nextjs-argon-dashboard.scss";
 
 // Router.events.on("routeChangeStart", (url) => {
 //   console.log(`Loading: ${url}`);
@@ -32,12 +32,12 @@ export default class MyApp extends App {
     let comment = document.createComment(`
 
 =========================================================
-* * NextJS Material Dashboard v1.0.0 based on Material Dashboard React v1.9.0
+* * NextJS Argon Dashboard v1.0.0 based on Argon Dashboard React v1.1.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/nextjs-material-dashboard
+* Product Page: https://www.creative-tim.com/product/nextjs-argon-dashboard
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/nextjs-material-dashboard/blob/master/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/nextjs-argon-dashboard/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
 

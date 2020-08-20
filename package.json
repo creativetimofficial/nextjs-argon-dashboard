@@ -6,9 +6,9 @@
     "start": "next start",
     "build": "next build",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && rm -rf out/ && npm install && npm run dev",
-    "compile-sass": "node-sass assets/scss/argon-dashboard-react.scss assets/css/argon-dashboard-react.css",
-    "minify-sass": "node-sass assets/scss/argon-dashboard-react.scss assets/css/argon-dashboard-react.min.css --output-style compressed",
-    "map-sass": "node-sass assets/scss/argon-dashboard-react.scss assets/css/argon-dashboard-react.css --source-map true",
+    "compile-sass": "node-sass assets/scss/nextjs-argon-dashboard.scss assets/css/nextjs-argon-dashboard.css",
+    "minify-sass": "node-sass assets/scss/nextjs-argon-dashboard.scss assets/css/nextjs-argon-dashboard.min.css --output-style compressed",
+    "map-sass": "node-sass assets/scss/nextjs-argon-dashboard.scss assets/css/nextjs-argon-dashboard.css --source-map true",
     "dev": "next dev"
   },
   "dependencies": {
