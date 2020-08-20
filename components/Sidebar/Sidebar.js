@@ -61,7 +61,7 @@ function Sidebar(props) {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   // verifies if routeName is the one active (in browser input)
   const activeRoute = (routeName) => {
-    return router.route.indexOf(routeName) > -1 ? "active" : "";
+    return router.route.indexOf(routeName) > -1;
   };
   // toggles collapse between opened and closed (true/false)
   const toggleCollapse = () => {
@@ -75,9 +75,9 @@ function Sidebar(props) {
   const createLinks = (routes) => {
     return routes.map((prop, key) => {
       return (
-        <NavItem key={key}>
+        <NavItem key={key} active={activeRoute(prop.layout + prop.path)}>
           <Link href={prop.layout + prop.path}>
-            <NavLink onClick={closeCollapse}>
+            <NavLink href="#pablo" onClick={closeCollapse}>
               <i className={prop.icon} />
               {prop.name}
             </NavLink>
