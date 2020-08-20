@@ -109,7 +109,9 @@ function Sidebar(props) {
         </button>
         {/* Brand */}
         {logo && logo.innerLink ? (
-          <Link href={logo.innerLink}><span>{navbarBrand}</span></Link>
+          <Link href={logo.innerLink}>
+            <span>{navbarBrand}</span>
+          </Link>
         ) : null}
         {logo && logo.outterLink ? (
           <a href={logo.innerLink} target="_blank">
