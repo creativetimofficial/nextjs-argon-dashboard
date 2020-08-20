@@ -224,19 +224,19 @@ function Sidebar(props) {
           {/* Navigation */}
           <Nav className="mb-md-3" navbar>
             <NavItem>
-              <NavLink href="https://demos.creative-tim.com/nextjs-argon-dashboard/#/documentation/overview?ref=adr-admin-sidebar">
+              <NavLink href="https://www.creative-tim.com/learning-lab/nextjs/overview/argon-dashboard?ref=njsad-admin-sidebar">
                 <i className="ni ni-spaceship" />
                 Getting started
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://demos.creative-tim.com/nextjs-argon-dashboard/#/documentation/colors?ref=adr-admin-sidebar">
+              <NavLink href="https://www.creative-tim.com/learning-lab/nextjs/colors/argon-dashboard?ref=njsad-admin-sidebar">
                 <i className="ni ni-palette" />
                 Foundation
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://demos.creative-tim.com/nextjs-argon-dashboard/#/documentation/alerts?ref=adr-admin-sidebar">
+              <NavLink href="https://www.creative-tim.com/learning-lab/nextjs/avatar/argon-dashboard?ref=njsad-admin-sidebar">
                 <i className="ni ni-ui-04" />
                 Components
               </NavLink>
@@ -244,7 +244,7 @@ function Sidebar(props) {
           </Nav>
           <Nav className="mb-md-3" navbar>
             <NavItem className="active-pro active">
-              <NavLink href="https://www.creative-tim.com/product/argon-dashboard-pro-react?ref=adr-admin-sidebar">
+              <NavLink href="https://www.creative-tim.com/product/argon-dashboard-pro-react?ref=njsad-admin-sidebar">
                 <i className="ni ni-spaceship" />
                 Upgrade to PRO
               </NavLink>
