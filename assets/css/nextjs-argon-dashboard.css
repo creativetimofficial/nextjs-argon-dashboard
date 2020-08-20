@@ -1,12 +1,12 @@
 /*!
 
 =========================================================
-* Argon Dashboard - v1.1.2
+* NextJS Argon Dashboard - v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-* Copyright 2018 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
+* Product Page: https://www.creative-tim.com/product/nextjs-argon-dashboard
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/nextjs-argon-dashboard/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -10727,7 +10727,7 @@ textarea[resize="horizontal"] {
   .icon-xl i, .icon-xl svg {
     font-size: 4.25rem; }
   .icon-xl + .icon-text {
-    width: calc(100% - $icon-size-xl - 1); }
+    width: calc(100% - 5rem - 1); }
 
 .icon-lg {
   width: 4rem;
@@ -10735,7 +10735,7 @@ textarea[resize="horizontal"] {
   .icon-lg i, .icon-lg svg {
     font-size: 3.25rem; }
   .icon-lg + .icon-text {
-    width: calc(100% - $icon-size-lg - 1); }
+    width: calc(100% - 4rem - 1); }
 
 .icon-sm {
   width: 2rem;
@@ -10743,7 +10743,7 @@ textarea[resize="horizontal"] {
   .icon-sm i, .icon-sm svg {
     font-size: 1.25rem; }
   .icon-sm + .icon-text {
-    width: calc(100% - $icon-size-sm - 1); }
+    width: calc(100% - 2rem - 1); }
 
 .icon-shape {
   padding: 12px;
@@ -13926,6 +13926,45 @@ pre > code.highlight {
     .ct-footer-links li + li {
       margin-left: 1rem; }
 
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg); } }
+
+.spinner-border {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-border .75s linear infinite; }
+
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.2em; }
+
+@keyframes spinner-grow {
+  0% {
+    transform: scale(0); }
+  50% {
+    opacity: 1; } }
+
+.spinner-grow {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  background-color: currentColor;
+  border-radius: 50%;
+  opacity: 0;
+  animation: spinner-grow .75s linear infinite; }
+
+.spinner-grow-sm {
+  width: 1rem;
+  height: 1rem; }
+
 /*!
 * https://github.com/YouCanBookMe/react-datetime
 */
@@ -14325,8 +14364,51 @@ button:focus, :focus {
 .navbar .nav-item .nav-link-icon.nav-link i {
   margin-right: 4px; }
 
+.body-page-transition {
+  overflow: hidden; }
+  .body-page-transition #page-transition {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center; }
+  .body-page-transition #page-transition > div:after {
+    content: "";
+    background-image: url("../img/theme/img-1-1000x600.jpg");
+    background-size: cover;
+    position: fixed;
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+  .body-page-transition #page-transition > div:before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    z-index: 9999;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5); }
+  .body-page-transition .page-transition-wrapper-div {
+    margin: 100px auto;
+    padding: 0px;
+    max-width: 360px;
+    text-align: center;
+    position: relative;
+    z-index: 9999;
+    top: 0; }
+  .body-page-transition .page-transition-icon-wrapper {
+    display: block; }
+
 .table .avatar-group .avatar {
   margin-right: 4px; }
 
 .table .badge i {
   margin-right: 10px; }
+
+/*# sourceMappingURL=nextjs-argon-dashboard.css.map */
