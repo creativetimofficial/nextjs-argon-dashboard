@@ -40,7 +40,7 @@ class AdminNavbar extends React.Component {
         >
           <Container className="px-4">
             <Link href="/">
-              <NavbarBrand>
+              <NavbarBrand href="#pablo">
                 <img
                   alt="..."
                   src={require("assets/img/brand/argon-react-white.png")}
@@ -75,7 +75,7 @@ class AdminNavbar extends React.Component {
               <Nav className="ml-auto" navbar>
                 <NavItem>
                   <Link href="/">
-                    <NavLink className="nav-link-icon">
+                    <NavLink href="#pablo" className="nav-link-icon">
                       <i className="ni ni-planet" />
                       <span className="nav-link-inner--text">Dashboard</span>
                     </NavLink>
@@ -83,7 +83,7 @@ class AdminNavbar extends React.Component {
                 </NavItem>
                 <NavItem>
                   <Link href="/auth/register">
-                    <NavLink className="nav-link-icon">
+                    <NavLink href="#pablo" className="nav-link-icon">
                       <i className="ni ni-circle-08" />
                       <span className="nav-link-inner--text">Register</span>
                     </NavLink>
@@ -91,7 +91,7 @@ class AdminNavbar extends React.Component {
                 </NavItem>
                 <NavItem>
                   <Link href="/auth/login">
-                    <NavLink className="nav-link-icon">
+                    <NavLink href="#pablo" className="nav-link-icon">
                       <i className="ni ni-key-25" />
                       <span className="nav-link-inner--text">Login</span>
                     </NavLink>
@@ -99,7 +99,7 @@ class AdminNavbar extends React.Component {
                 </NavItem>
                 <NavItem>
                   <Link href="/admin/user-profile">
-                    <NavLink className="nav-link-icon">
+                    <NavLink href="#pablo" className="nav-link-icon">
                       <i className="ni ni-single-02" />
                       <span className="nav-link-inner--text">Profile</span>
                     </NavLink>
