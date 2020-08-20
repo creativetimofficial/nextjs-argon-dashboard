@@ -86,19 +86,12 @@ function Sidebar(props) {
       );
     });
   };
-  const { bgColor, routes, logo } = props;
-  let navbarBrandProps;
-  if (logo && logo.innerLink) {
-    navbarBrandProps = {
-      to: logo.innerLink,
-      tag: Link,
-    };
-  } else if (logo && logo.outterLink) {
-    navbarBrandProps = {
-      href: logo.outterLink,
-      target: "_blank",
-    };
-  }
+  const { routes, logo } = props;
+  let navbarBrand = (
+    <NavbarBrand className="pt-0">
+      <img alt={logo.imgAlt} className="navbar-brand-img" src={logo.imgSrc} />
+    </NavbarBrand>
+  );
   return (
     <Navbar
       className="navbar-vertical fixed-left navbar-light bg-white"
@@ -115,14 +108,13 @@ function Sidebar(props) {
           <span className="navbar-toggler-icon" />
         </button>
         {/* Brand */}
-        {logo ? (
-          <NavbarBrand className="pt-0" {...navbarBrandProps}>
-            <img
-              alt={logo.imgAlt}
-              className="navbar-brand-img"
-              src={logo.imgSrc}
-            />
-          </NavbarBrand>
+        {logo && logo.innerLink ? (
+          <Link href={logo.innerLink}>{navbarBrand}</Link>
+        ) : null}
+        {logo && logo.outterLink ? (
+          <a href={logo.innerLink} target="_blank">
+            {navbarBrand}
+          </a>
         ) : null}
         {/* User */}
         <Nav className="align-items-center d-md-none">
