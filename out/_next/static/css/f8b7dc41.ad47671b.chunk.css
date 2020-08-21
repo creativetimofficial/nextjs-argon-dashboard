@@ -14376,7 +14376,7 @@ button:focus, :focus {
     align-items: center; }
   .body-page-transition #page-transition > div:after {
     content: "";
-    background-image: url(/_next/static/images/img-1-1000x600-35a52547bfba87e5480f3a5fa7691236.jpg);
+    background-image: url(/nextjs-argon-dashboard/_next/static/images/img-1-1000x600-35a52547bfba87e5480f3a5fa7691236.jpg);
     background-size: cover;
     position: fixed;
     z-index: 9998;
