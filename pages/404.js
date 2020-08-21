@@ -3,7 +3,10 @@ import Router from "next/router";
 
 export default class Error404 extends Component {
   componentDidMount = () => {
-    Router.push("/admin/dashboard");
+    Router.push(
+      (process.env.NODE_ENV === "production" ? "/nextjs-argon-dashboard" : "") +
+        "/admin/dashboard"
+    );
   };
 
   render() {

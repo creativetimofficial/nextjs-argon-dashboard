@@ -59,7 +59,16 @@ function Sidebar(props) {
     return routes.map((prop, key) => {
       return (
         <NavItem key={key} active={activeRoute(prop.layout + prop.path)}>
-          <Link href={prop.layout + prop.path}>
+          <Link
+            href={prop.layout + prop.path}
+            as={
+              (process.env.NODE_ENV === "production"
+                ? "/nextjs-argon-dashboard"
+                : "") +
+              prop.layout +
+              prop.path
+            }
+          >
             <NavLink
               href="#pablo"
               active={activeRoute(prop.layout + prop.path)}
@@ -96,7 +105,14 @@ function Sidebar(props) {
         </button>
         {/* Brand */}
         {logo && logo.innerLink ? (
-          <Link href={logo.innerLink}>
+          <Link
+            href={logo.innerLink}
+            as={
+              (process.env.NODE_ENV === "production"
+                ? "/nextjs-argon-dashboard"
+                : "") + logo.innerLink
+            }
+          >
             <span>{navbarBrand}</span>
           </Link>
         ) : null}
@@ -137,25 +153,53 @@ function Sidebar(props) {
               <DropdownItem className="noti-title" header tag="div">
                 <h6 className="text-overflow m-0">Welcome!</h6>
               </DropdownItem>
-              <Link href="/admin/user-profile">
+              <Link
+                href="/admin/profile"
+                as={
+                  (process.env.NODE_ENV === "production"
+                    ? "/nextjs-argon-dashboard"
+                    : "") + "/admin/profile"
+                }
+              >
                 <DropdownItem>
                   <i className="ni ni-single-02" />
                   <span>My profile</span>
                 </DropdownItem>
               </Link>
-              <Link href="/admin/user-profile">
+              <Link
+                href="/admin/profile"
+                as={
+                  (process.env.NODE_ENV === "production"
+                    ? "/nextjs-argon-dashboard"
+                    : "") + "/admin/profile"
+                }
+              >
                 <DropdownItem>
                   <i className="ni ni-settings-gear-65" />
                   <span>Settings</span>
                 </DropdownItem>
               </Link>
-              <Link href="/admin/user-profile">
+              <Link
+                href="/admin/profile"
+                as={
+                  (process.env.NODE_ENV === "production"
+                    ? "/nextjs-argon-dashboard"
+                    : "") + "/admin/profile"
+                }
+              >
                 <DropdownItem>
                   <i className="ni ni-calendar-grid-58" />
                   <span>Activity</span>
                 </DropdownItem>
               </Link>
-              <Link href="/admin/user-profile">
+              <Link
+                href="/admin/profile"
+                as={
+                  (process.env.NODE_ENV === "production"
+                    ? "/nextjs-argon-dashboard"
+                    : "") + "/admin/profile"
+                }
+              >
                 <DropdownItem>
                   <i className="ni ni-support-16" />
                   <span>Support</span>
@@ -177,7 +221,14 @@ function Sidebar(props) {
               {logo ? (
                 <Col className="collapse-brand" xs="6">
                   {logo.innerLink ? (
-                    <Link href={logo.innerLink}>
+                    <Link
+                      href={logo.innerLink}
+                      as={
+                        (process.env.NODE_ENV === "production"
+                          ? "/nextjs-argon-dashboard"
+                          : "") + logo.innerLink
+                      }
+                    >
                       <img alt={logo.imgAlt} src={logo.imgSrc} />
                     </Link>
                   ) : (

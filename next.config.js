@@ -10,6 +10,10 @@ module.exports = withFonts(
   withCSS(
     withImages(
       withSass({
+        assetPrefix:
+          process.env.NODE_ENV === "production"
+            ? "/nextjs-argon-dashboard"
+            : "",
         webpack(config, options) {
           config.module.rules.push({
             test: /\.(eot|ttf|woff|woff2)$/,

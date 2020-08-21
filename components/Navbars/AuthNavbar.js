@@ -22,7 +22,14 @@ class AdminNavbar extends React.Component {
           expand="md"
         >
           <Container className="px-4">
-            <Link href="/admin/dashboard">
+            <Link
+              href="/admin/dashboard"
+              as={
+                (process.env.NODE_ENV === "production"
+                  ? "/nextjs-argon-dashboard"
+                  : "") + "/admin/dashboard"
+              }
+            >
               <span>
                 <NavbarBrand href="#pablo">
                   <img
@@ -39,7 +46,14 @@ class AdminNavbar extends React.Component {
               <div className="navbar-collapse-header d-md-none">
                 <Row>
                   <Col className="collapse-brand" xs="6">
-                    <Link href="/admin/dashboard">
+                    <Link
+                      href="/admin/dashboard"
+                      as={
+                        (process.env.NODE_ENV === "production"
+                          ? "/nextjs-argon-dashboard"
+                          : "") + "/admin/dashboard"
+                      }
+                    >
                       <img
                         alt="..."
                         src={require("assets/img/brand/nextjs_argon_black.png")}
@@ -59,7 +73,14 @@ class AdminNavbar extends React.Component {
               </div>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <Link href="/admin/dashboard">
+                  <Link
+                    href="/admin/dashboard"
+                    as={
+                      (process.env.NODE_ENV === "production"
+                        ? "/nextjs-argon-dashboard"
+                        : "") + "/admin/dashboard"
+                    }
+                  >
                     <NavLink href="#pablo" className="nav-link-icon">
                       <i className="ni ni-planet" />
                       <span className="nav-link-inner--text">Dashboard</span>
@@ -67,7 +88,14 @@ class AdminNavbar extends React.Component {
                   </Link>
                 </NavItem>
                 <NavItem>
-                  <Link href="/auth/register">
+                  <Link
+                    href="/auth/register"
+                    as={
+                      (process.env.NODE_ENV === "production"
+                        ? "/nextjs-argon-dashboard"
+                        : "") + "/auth/register"
+                    }
+                  >
                     <NavLink href="#pablo" className="nav-link-icon">
                       <i className="ni ni-circle-08" />
                       <span className="nav-link-inner--text">Register</span>
@@ -75,7 +103,14 @@ class AdminNavbar extends React.Component {
                   </Link>
                 </NavItem>
                 <NavItem>
-                  <Link href="/auth/login">
+                  <Link
+                    href="/auth/login"
+                    as={
+                      (process.env.NODE_ENV === "production"
+                        ? "/nextjs-argon-dashboard"
+                        : "") + "/auth/login"
+                    }
+                  >
                     <NavLink href="#pablo" className="nav-link-icon">
                       <i className="ni ni-key-25" />
                       <span className="nav-link-inner--text">Login</span>
@@ -83,7 +118,14 @@ class AdminNavbar extends React.Component {
                   </Link>
                 </NavItem>
                 <NavItem>
-                  <Link href="/admin/user-profile">
+                  <Link
+                    href="/admin/profile"
+                    as={
+                      (process.env.NODE_ENV === "production"
+                        ? "/nextjs-argon-dashboard"
+                        : "") + "/admin/profile"
+                    }
+                  >
                     <NavLink href="#pablo" className="nav-link-icon">
                       <i className="ni ni-single-02" />
                       <span className="nav-link-inner--text">Profile</span>

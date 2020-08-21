@@ -24,7 +24,14 @@ class AdminNavbar extends React.Component {
       <>
         <Navbar className="navbar-top navbar-dark" expand="md" id="navbar-main">
           <Container fluid>
-            <Link href="/admin/dashboard">
+            <Link
+              href="/admin/dashboard"
+              as={
+                (process.env.NODE_ENV === "production"
+                  ? "/nextjs-argon-dashboard"
+                  : "") + "/admin/dashboard"
+              }
+            >
               <a className="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block">
                 {this.props.brandText}
               </a>
@@ -62,25 +69,53 @@ class AdminNavbar extends React.Component {
                   <DropdownItem className="noti-title" header tag="div">
                     <h6 className="text-overflow m-0">Welcome!</h6>
                   </DropdownItem>
-                  <Link href="/admin/user-profile">
+                  <Link
+                    href="/admin/profile"
+                    as={
+                      (process.env.NODE_ENV === "production"
+                        ? "/nextjs-argon-dashboard"
+                        : "") + "/admin/profile"
+                    }
+                  >
                     <DropdownItem>
                       <i className="ni ni-single-02" />
                       <span>My profile</span>
                     </DropdownItem>
                   </Link>
-                  <Link href="/admin/user-profile">
+                  <Link
+                    href="/admin/profile"
+                    as={
+                      (process.env.NODE_ENV === "production"
+                        ? "/nextjs-argon-dashboard"
+                        : "") + "/admin/profile"
+                    }
+                  >
                     <DropdownItem>
                       <i className="ni ni-settings-gear-65" />
                       <span>Settings</span>
                     </DropdownItem>
                   </Link>
-                  <Link href="/admin/user-profile">
+                  <Link
+                    href="/admin/user-profile"
+                    as={
+                      (process.env.NODE_ENV === "production"
+                        ? "/nextjs-argon-dashboard"
+                        : "") + "/admin/profile"
+                    }
+                  >
                     <DropdownItem>
                       <i className="ni ni-calendar-grid-58" />
                       <span>Activity</span>
                     </DropdownItem>
                   </Link>
-                  <Link href="/admin/user-profile">
+                  <Link
+                    href="/admin/user-profile"
+                    as={
+                      (process.env.NODE_ENV === "production"
+                        ? "/nextjs-argon-dashboard"
+                        : "") + "/admin/profile"
+                    }
+                  >
                     <DropdownItem>
                       <i className="ni ni-support-16" />
                       <span>Support</span>
