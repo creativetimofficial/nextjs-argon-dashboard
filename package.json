@@ -10,7 +10,9 @@
     "minify-sass": "node-sass assets/scss/nextjs-argon-dashboard.scss assets/css/nextjs-argon-dashboard.min.css --output-style compressed",
     "map-sass": "node-sass assets/scss/nextjs-argon-dashboard.scss assets/css/nextjs-argon-dashboard.css --source-map true",
     "all-sass": "npm run compile-sass && npm run minify-sass && npm run map-sass",
-    "dev": "next dev"
+    "dev": "next dev",
+    "export": "next export",
+    "deploy": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && rm -rf out/ && npm install && npm run build && npm run export && touch out/.nojekyll && git add . && git commit -m \"ready to deploy\" && git push && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.14.0",
