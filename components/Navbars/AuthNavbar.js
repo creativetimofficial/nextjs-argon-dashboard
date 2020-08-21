@@ -83,7 +83,7 @@ class AdminNavbar extends React.Component {
                   </Link>
                 </NavItem>
                 <NavItem>
-                  <Link href="/admin/user-profile">
+                  <Link href="/admin/profile">
                     <NavLink href="#pablo" className="nav-link-icon">
                       <i className="ni ni-single-02" />
                       <span className="nav-link-inner--text">Profile</span>
