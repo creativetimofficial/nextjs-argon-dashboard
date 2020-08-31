@@ -71,7 +71,7 @@ class MyDocument extends Document {
 
           <meta
             itemprop="image"
-            content="https://s3.amazonaws.com/creativetim_bucket/products/346/opt_ad_nextjs_thumbnail.jpg"
+            content="https://s3.amazonaws.com/creativetim_bucket/products/346/original/opt_ad_nexjs_thumbnail.jpg"
           />
 
           {/* Twitter Card data */}
@@ -89,7 +89,7 @@ class MyDocument extends Document {
           <meta name="twitter:creator" content="@creativetim" />
           <meta
             name="twitter:image"
-            content="https://s3.amazonaws.com/creativetim_bucket/products/346/opt_ad_nextjs_thumbnail.jpg"
+            content="https://s3.amazonaws.com/creativetim_bucket/products/346/original/opt_ad_nexjs_thumbnail.jpg"
           />
 
           {/* Open Graph data */}
@@ -105,7 +105,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://s3.amazonaws.com/creativetim_bucket/products/346/opt_ad_nextjs_thumbnail.jpg"
+            content="https://s3.amazonaws.com/creativetim_bucket/products/346/original/opt_ad_nexjs_thumbnail.jpg"
           />
           <meta
             property="og:description"
