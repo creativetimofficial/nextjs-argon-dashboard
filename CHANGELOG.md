@@ -1,4 +1,4 @@
-## [1.0.0] 2020-08-27
+## [1.0.0] 2020-09-14
 ### Original Release
 - Started project with NextJS
 - Added design from Argon Dashboard React by Creative Tim
