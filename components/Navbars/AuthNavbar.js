@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Argon Dashboard React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import Link from "next/link";
 // reactstrap components
@@ -39,13 +22,15 @@ class AdminNavbar extends React.Component {
           expand="md"
         >
           <Container className="px-4">
-            <Link href="/">
-              <NavbarBrand>
-                <img
-                  alt="..."
-                  src={require("assets/img/brand/argon-react-white.png")}
-                />
-              </NavbarBrand>
+            <Link href="/admin/dashboard">
+              <span>
+                <NavbarBrand href="#pablo">
+                  <img
+                    alt="..."
+                    src={require("assets/img/brand/nextjs_argon_white.png")}
+                  />
+                </NavbarBrand>
+              </span>
             </Link>
             <button className="navbar-toggler" id="navbar-collapse-main">
               <span className="navbar-toggler-icon" />
@@ -54,10 +39,10 @@ class AdminNavbar extends React.Component {
               <div className="navbar-collapse-header d-md-none">
                 <Row>
                   <Col className="collapse-brand" xs="6">
-                    <Link href="/">
+                    <Link href="/admin/dashboard">
                       <img
                         alt="..."
-                        src={require("assets/img/brand/argon-react.png")}
+                        src={require("assets/img/brand/nextjs_argon_black.png")}
                       />
                     </Link>
                   </Col>
@@ -74,8 +59,8 @@ class AdminNavbar extends React.Component {
               </div>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <Link href="/">
-                    <NavLink className="nav-link-icon">
+                  <Link href="/admin/dashboard">
+                    <NavLink href="#pablo" className="nav-link-icon">
                       <i className="ni ni-planet" />
                       <span className="nav-link-inner--text">Dashboard</span>
                     </NavLink>
@@ -83,7 +68,7 @@ class AdminNavbar extends React.Component {
                 </NavItem>
                 <NavItem>
                   <Link href="/auth/register">
-                    <NavLink className="nav-link-icon">
+                    <NavLink href="#pablo" className="nav-link-icon">
                       <i className="ni ni-circle-08" />
                       <span className="nav-link-inner--text">Register</span>
                     </NavLink>
@@ -91,15 +76,15 @@ class AdminNavbar extends React.Component {
                 </NavItem>
                 <NavItem>
                   <Link href="/auth/login">
-                    <NavLink className="nav-link-icon">
+                    <NavLink href="#pablo" className="nav-link-icon">
                       <i className="ni ni-key-25" />
                       <span className="nav-link-inner--text">Login</span>
                     </NavLink>
                   </Link>
                 </NavItem>
                 <NavItem>
-                  <Link href="/admin/user-profile">
-                    <NavLink className="nav-link-icon">
+                  <Link href="/admin/profile">
+                    <NavLink href="#pablo" className="nav-link-icon">
                       <i className="ni ni-single-02" />
                       <span className="nav-link-inner--text">Profile</span>
                     </NavLink>

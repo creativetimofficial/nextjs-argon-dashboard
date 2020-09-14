@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Argon Dashboard React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 // node.js library that concatenates classes (strings)
 import classnames from "classnames";
@@ -37,7 +20,8 @@ import {
   Row,
   Col,
 } from "reactstrap";
-
+// layout for this page
+import Admin from "layouts/Admin.js";
 // core components
 import {
   chartOptions,
@@ -48,7 +32,7 @@ import {
 
 import Header from "components/Headers/Header.js";
 
-class Index extends React.Component {
+class Dashboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -75,14 +59,14 @@ class Index extends React.Component {
         <Container className="mt--7" fluid>
           <Row>
             <Col className="mb-5 mb-xl-0" xl="8">
-              <Card className="bg-gradient-default shadow">
+              <Card className="shadow">
                 <CardHeader className="bg-transparent">
                   <Row className="align-items-center">
                     <div className="col">
                       <h6 className="text-uppercase text-light ls-1 mb-1">
                         Overview
                       </h6>
-                      <h2 className="text-white mb-0">Sales value</h2>
+                      <h2 className="mb-0">Sales value</h2>
                     </div>
                     <div className="col">
                       <Nav className="justify-content-end" pills>
@@ -345,4 +329,6 @@ class Index extends React.Component {
   }
 }
 
-export default Index;
+Dashboard.layout = Admin;
+
+export default Dashboard;
