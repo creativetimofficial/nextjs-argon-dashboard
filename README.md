@@ -1,9 +1,3 @@
-<a href="https://www.creative-tim.com/campaign?utm_medium=social&utm_source=github&utm_campaign=bf-readme-2020">
-<img border="0" alt="Creative Tim Black Friday Offer" src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/bf-github-banner.png" >
-</a>
-
-
-
 # [NextJS Argon Dashboard](https://demos.creative-tim.com/nextjs-argon-dashboard?ref=njsad-github-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=NextJS%20Argon%20Dashboard%20is%20a%20Free%20NextJS%204,%20Bootstrap%204,%20React%20and%20Reactstrap%20Dashboard%20%E2%9D%A4%EF%B8%8F%0Ahttps%3A//demos.creative-tim.com/nextjs-argon-dashboard-%20%23react%20%23reactstrap%20%23nextjs%20%23argon%20%23argondesign%20%23reactdashboard%20%23argonreact%20%23reactdesign%20%23bootstrap%20%23uikit%20%23freebie%20%20via%20%40CreativeTim)
 
 
