@@ -18,14 +18,14 @@ import {
   Media,
 } from "reactstrap";
 
-function AdminNavbar() {
+function AdminNavbar({brandText}) {
   return (
     <>
       <Navbar className="navbar-top navbar-dark" expand="md" id="navbar-main">
         <Container fluid>
           <Link href="/admin/dashboard">
             <a className="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block">
-              {this.props.brandText}
+              {brandText}
             </a>
           </Link>
           <Form className="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
