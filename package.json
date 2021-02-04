@@ -1,6 +1,17 @@
 {
   "name": "nextjs-argon-dashboard",
   "version": "1.1.0",
+  "author": "Creative Tim",
+  "license": "MIT",
+  "homepage": "https://demos.creative-tim.com/nextjs-argon-dashboard/",
+  "description": "NextJS version of Argon Dashboard React by Creative Tim",
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/nextjs-argon-dashboard/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/nextjs-argon-dashboard.git"
+  },
   "scripts": {
     "start": "next start",
     "build": "next build",
