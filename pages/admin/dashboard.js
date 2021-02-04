@@ -33,8 +33,8 @@ import {
 import Header from "components/Headers/Header.js";
 
 const Dashboard = (props) => {
-  const [activeNav, setActiveNav] = useState(1);
-  const [chartExample1Data, setChartExample1Data] = useState("data1");
+  const [activeNav, setActiveNav] = React.useState(1);
+  const [chartExample1Data, setChartExample1Data] = React.useState("data1");
 
   if (window.Chart) {
     parseOptions(Chart, chartOptions());
@@ -52,7 +52,7 @@ const Dashboard = (props) => {
       <Container className="mt--7" fluid>
         <Row>
           <Col className="mb-5 mb-xl-0" xl="8">
-            <Card className="bg-gradient-default shadow">
+            <Card className="shadow">
               <CardHeader className="bg-transparent">
                 <Row className="align-items-center">
                   <div className="col">
