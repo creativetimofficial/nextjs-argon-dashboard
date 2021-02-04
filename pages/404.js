@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import Router from "next/router";
 
-export default class Error404 extends Component {
-  componentDidMount = () => {
+export default function Error404() {
+  React.useEffect(() => {
     Router.push(
       (process.env.NODE_ENV === "production" ? "/nextjs-argon-dashboard" : "") +
         "/admin/dashboard"
     );
-  };
+  });
 
-  render() {
-    return <div />;
-  }
+  return <div />;
 }

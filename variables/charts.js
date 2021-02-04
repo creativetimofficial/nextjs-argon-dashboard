@@ -2,16 +2,18 @@ if (typeof window === "undefined") {
   global.window = {};
 }
 if (typeof document === "undefined") {
-  global.document = {};
+  global.document = {
+    querySelector: () => {},
+  };
 }
 /*!
 
 =========================================================
-* NextJS Argon Dashboard - v1.0.0
+* NextJS Argon Dashboard - v1.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/nextjs-argon-dashboard
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/nextjs-argon-dashboard/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
