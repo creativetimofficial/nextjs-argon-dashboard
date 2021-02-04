@@ -94,24 +94,22 @@ const MapWrapper = () => {
   );
 };
 
-class Maps extends React.Component {
-  render() {
-    return (
-      <>
-        <Header />
-        {/* Page content */}
-        <Container className="mt--7" fluid>
-          <Row>
-            <div className="col">
-              <Card className="shadow border-0">
-                <MapWrapper />
-              </Card>
-            </div>
-          </Row>
-        </Container>
-      </>
-    );
-  }
+function Maps() {
+  return (
+    <>
+      <Header />
+      {/* Page content */}
+      <Container className="mt--7" fluid>
+        <Row>
+          <div className="col">
+            <Card className="shadow border-0">
+              <MapWrapper />
+            </Card>
+          </div>
+        </Row>
+      </Container>
+    </>
+  );
 }
 
 Maps.layout = Admin;
