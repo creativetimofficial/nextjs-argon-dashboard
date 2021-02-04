@@ -18,7 +18,7 @@ import {
   Media,
 } from "reactstrap";
 
-function AdminNavbar({brandText}) {
+function AdminNavbar({ brandText }) {
   return (
     <>
       <Navbar className="navbar-top navbar-dark" expand="md" id="navbar-main">
