@@ -6,11 +6,11 @@ import { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
 function Header() {
   return (
     <>
-      <div className="header bg-gradient-dark pb-8 pt-5 pt-md-8">
+      <div className="header pb-5 pt-5 pt-md-8">
         <Container fluid>
           <div className="header-body">
             {/* Card stats */}
-            <Row>
+            {/* <Row>
               <Col lg="6" xl="3">
                 <Card className="card-stats mb-4 mb-xl-0">
                   <CardBody>
@@ -125,7 +125,7 @@ function Header() {
                   </CardBody>
                 </Card>
               </Col>
-            </Row>
+            </Row> */}
           </div>
         </Container>
       </div>
