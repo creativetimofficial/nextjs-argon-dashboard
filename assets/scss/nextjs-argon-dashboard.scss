@@ -17,10 +17,13 @@
 */
 
 // Core
+// custom-theme
 
-@import "argon-dashboard/custom/functions";
-@import "argon-dashboard/custom/variables";
-@import "argon-dashboard/custom/mixins";
+@import "coala-theme/custom/functions";
+@import "coala-theme/custom/variables";
+@import "coala-theme/custom/mixins";
+
+@import "coala-theme/constants/colors";
 
 // bootstrap (4.3.1) components
 
@@ -59,24 +62,24 @@
 
 // Argon utilities and components
 
-@import "argon-dashboard/custom/reboot";
-@import "argon-dashboard/custom/utilities";
-@import "argon-dashboard/custom/components";
+@import "coala-theme/custom/reboot";
+@import "coala-theme/custom/utilities";
+@import "coala-theme/custom/components";
 
 // Vendor (Plugins)
 
-@import "argon-dashboard/custom/vendors";
+@import "coala-theme/custom/vendors";
 
 // Docs components
 
-@import "argon-dashboard/docs/variables";
-@import "argon-dashboard/docs/nav";
-@import "argon-dashboard/docs/clipboard-js";
-@import "argon-dashboard/docs/component-examples";
-@import "argon-dashboard/docs/prism";
-@import "argon-dashboard/docs/content";
-@import "argon-dashboard/docs/sidebar";
-@import "argon-dashboard/docs/footer";
+@import "coala-theme/docs/variables";
+@import "coala-theme/docs/nav";
+@import "coala-theme/docs/clipboard-js";
+@import "coala-theme/docs/component-examples";
+@import "coala-theme/docs/prism";
+@import "coala-theme/docs/content";
+@import "coala-theme/docs/sidebar";
+@import "coala-theme/docs/footer";
 
 // React Differences
 @import "react/react-differences";

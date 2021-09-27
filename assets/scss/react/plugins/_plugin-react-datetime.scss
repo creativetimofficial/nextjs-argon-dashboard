@@ -28,7 +28,7 @@
   position: absolute;
   padding: 20px;
   margin-top: 1px;
-  z-index: 99999 !important;
+  z-index: 99999 ;
   background: #fff;
   border-radius: .375rem;
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
@@ -98,7 +98,7 @@
 .rdtPicker table {
   width: 100%;
   margin: 0;
-  border-color: $white !important;
+  border-color: $white ;
 }
 .rdtPicker td,
 .rdtPicker th {
@@ -125,8 +125,8 @@
   &.start-date:hover,
   &.end-date:hover,
   &.middle-date:hover {
-    background-color: $info !important;
-    color: $white !important;
+    background-color: $info ;
+    color: $white ;
   }
   &.start-date{
     border-top-right-radius: 0;
@@ -389,7 +389,7 @@ td.rdtYear:hover {
     &.start-date,
     &.end-date,
     &.middle-date {
-      background-color: $info !important;
+      background-color: $info ;
       color: $white;
     }
   }
