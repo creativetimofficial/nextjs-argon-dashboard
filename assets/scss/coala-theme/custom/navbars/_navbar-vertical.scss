@@ -9,19 +9,20 @@
 .navbar-vertical {
     box-shadow: $navbar-vertical-box-shadow;
     background-color: $nav-background;
+
     .navbar {
         border-width: 0 0 1px 0;
         border-style: solid;
 
     }
 
-    
 
     // Navbar light
 
     .navbar-light {
         background-color: $navbar-light-bg;
         border-color: $navbar-light-border-color;
+
     }
 
 
@@ -71,9 +72,11 @@
             padding-right: $navbar-padding-x;
             font-size: $navbar-nav-link-font-size;
 
+            color: white;
+
             &.active {
                 position: relative;
-
+                color: $mint;
                 &:before {
                     content: '';
                     position: absolute;
@@ -82,6 +85,9 @@
                     bottom: $nav-link-padding-y;
                     border-left: 2px solid $primary;
                 }
+            }
+            &:hover {
+                color: $mint;
             }
 
 
