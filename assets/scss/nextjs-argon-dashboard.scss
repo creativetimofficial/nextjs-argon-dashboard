@@ -1,26 +1,12 @@
-/*!
-
-=========================================================
-* NextJS Argon Dashboard - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/nextjs-argon-dashboard
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/nextjs-argon-dashboard/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 
 // Core
+// custom-theme
 
-@import "argon-dashboard/custom/functions";
-@import "argon-dashboard/custom/variables";
-@import "argon-dashboard/custom/mixins";
+@import "coala-theme/custom/functions";
+@import "coala-theme/custom/variables";
+@import "coala-theme/custom/mixins";
+
+@import "coala-theme/constants/colors";
 
 // bootstrap (4.3.1) components
 
@@ -59,24 +45,24 @@
 
 // Argon utilities and components
 
-@import "argon-dashboard/custom/reboot";
-@import "argon-dashboard/custom/utilities";
-@import "argon-dashboard/custom/components";
+@import "coala-theme/custom/reboot";
+@import "coala-theme/custom/utilities";
+@import "coala-theme/custom/components";
 
 // Vendor (Plugins)
 
-@import "argon-dashboard/custom/vendors";
+@import "coala-theme/custom/vendors";
 
 // Docs components
 
-@import "argon-dashboard/docs/variables";
-@import "argon-dashboard/docs/nav";
-@import "argon-dashboard/docs/clipboard-js";
-@import "argon-dashboard/docs/component-examples";
-@import "argon-dashboard/docs/prism";
-@import "argon-dashboard/docs/content";
-@import "argon-dashboard/docs/sidebar";
-@import "argon-dashboard/docs/footer";
+@import "coala-theme/docs/variables";
+@import "coala-theme/docs/nav";
+@import "coala-theme/docs/clipboard-js";
+@import "coala-theme/docs/component-examples";
+@import "coala-theme/docs/prism";
+@import "coala-theme/docs/content";
+@import "coala-theme/docs/sidebar";
+@import "coala-theme/docs/footer";
 
 // React Differences
 @import "react/react-differences";

@@ -3,8 +3,8 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
 // core components
-import AuthNavbar from "components/Navbars/AuthNavbar.js";
-import AuthFooter from "components/Footers/AuthFooter.js";
+import AuthNavbar from "../components/Navbars/AuthNavbar";
+import AuthFooter from "../components/Footers/AuthFooter";
 
 import routes from "routes.js";
 

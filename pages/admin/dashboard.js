@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // node.js library that concatenates classes (strings)
 import classnames from "classnames";
 // javascipt plugin for creating charts
@@ -9,16 +9,20 @@ import { Line, Bar } from "react-chartjs-2";
 import {
   Button,
   Card,
+  CardTitle,
   CardHeader,
   CardBody,
   NavItem,
   NavLink,
   Nav,
   Progress,
-  Table,
   Container,
   Row,
   Col,
+  Table,
+  ListGroupItem,
+  ListGroup,
+  ListGroupItemHeading,
 } from "reactstrap";
 // layout for this page
 import Admin from "layouts/Admin.js";
@@ -33,8 +37,8 @@ import {
 import Header from "components/Headers/Header.js";
 
 const Dashboard = (props) => {
-  const [activeNav, setActiveNav] = React.useState(1);
-  const [chartExample1Data, setChartExample1Data] = React.useState("data1");
+  const [activeNav, setActiveNav] = useState(1);
+  const [chartExample1Data, setChartExample1Data] = useState("data1");
 
   if (window.Chart) {
     parseOptions(Chart, chartOptions());
@@ -50,16 +54,182 @@ const Dashboard = (props) => {
       <Header />
       {/* Page content */}
       <Container className="mt--7" fluid>
+        <Row> 메인 </Row>
+        {/* Card stats */}
         <Row>
-          <Col className="mb-5 mb-xl-0" xl="8">
+          <Col lg="6" xl="3">
+            <Card className="card-stats mb-4 mb-xl-0">
+              <CardBody>
+                <Row>
+                  <div className="col">
+                    <CardTitle
+                      tag="h5"
+                      className="text-uppercase text-muted mb-0"
+                    >
+                      방문횟수
+                    </CardTitle>
+                    <span className="h2 font-weight-bold mb-0">192,830</span>
+                  </div>
+                  <Col className="col-auto">
+                    <div className=" text-black">Day </div>
+                  </Col>
+                </Row>
+                <p className="mt-3 mb-0 text-muted text-sm">
+                  <span className="text-success mr-2">
+                    <i className="fa fa-arrow-up" /> 610
+                  </span>{" "}
+                </p>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col lg="6" xl="3">
+            <Card className="card-stats mb-4 mb-xl-0">
+              <CardBody>
+                <Row>
+                  <div className="col">
+                    <CardTitle
+                      tag="h5"
+                      className="text-uppercase text-muted mb-0"
+                    >
+                      신규회원가입
+                    </CardTitle>
+                    <span className="h2 font-weight-bold mb-0">2</span>
+                  </div>
+                  <Col className="col-auto">
+                    <div className=" text-black">Day </div>
+                  </Col>
+                </Row>
+                <p className="mt-3 mb-0 text-muted text-sm">
+                  <span className="text-success mr-2">
+                    <i className="fas fa-arrow-up" /> 610
+                  </span>{" "}
+                </p>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col lg="6" xl="3">
+            <Card className="card-stats mb-4 mb-xl-0">
+              <CardBody>
+                <Row>
+                  <div className="col">
+                    <CardTitle
+                      tag="h5"
+                      className="text-uppercase text-muted mb-0"
+                    >
+                      게시글
+                    </CardTitle>
+                    <span className="h2 font-weight-bold mb-0">1,232</span>
+                  </div>
+                  <Col className="col-auto">
+                    <div className=" text-black">Day</div>
+                  </Col>
+                </Row>
+                <p className="mt-3 mb-0 text-muted text-sm">
+                  <span className="text-success mr-2">
+                    <i className="fas fa-arrow-up" /> 610
+                  </span>{" "}
+                </p>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col lg="6" xl="3">
+            <Card className="card-stats mb-4 mb-xl-0">
+              <CardBody>
+                <Row>
+                  <div className="col">
+                    <CardTitle
+                      tag="h5"
+                      className="text-uppercase text-muted mb-0"
+                    >
+                      댓글
+                    </CardTitle>
+                    <span className="h2 font-weight-bold mb-0">120,232</span>
+                  </div>
+                  <Col className="col-auto">
+                    <div className=" text-black">Day </div>
+                  </Col>
+                </Row>
+                <p className="mt-3 mb-0 text-muted text-sm">
+                  <span className="text-danger mr-2">
+                    <i className="fas fa-arrow-down" /> 610
+                  </span>{" "}
+                </p>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+        <Row className="mt-5">
+          <Col className="">
+            <Card>
+              <CardHeader>
+                <div className="col">
+                  {/* <h6 className="text-uppercase text-light ls-1 mb-1">
+                      Overview
+                    </h6> */}
+                  <h4 className="text-black mb-0">신고글 관리</h4>
+                </div>
+              </CardHeader>
+              <CardBody>
+                <ListGroup as="ul">
+                  <ListGroupItemHeading>미처리 신고글</ListGroupItemHeading>
+                  <ListGroupItem as="li">이 사람 신고합니다 </ListGroupItem>
+                  <ListGroupItem as="li">
+                    왜 아직 답글을 안 달아주시는 거죠?
+                  </ListGroupItem>
+                  <ListGroupItem as="li">
+                    이 사람 한두번 이러는게 아닙니다 조치 취해주세요
+                  </ListGroupItem>
+                </ListGroup>
+                <ListGroup as="ul">
+                  <ListGroupItemHeading>미처리 신고 댓글</ListGroupItemHeading>
+                  <ListGroupItem as="li">이 사람 신고합니다</ListGroupItem>
+                  <ListGroupItem as="li">
+                    왜 아직 답글을 안 달아주시는 거죠?
+                  </ListGroupItem>
+                  <ListGroupItem as="li">
+                    이 사람 한두번 이러는게 아닙니다 조치 취해주세요
+                  </ListGroupItem>
+                </ListGroup>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <CardHeader>
+                <div className="col">
+                  {/* <h6 className="text-uppercase text-light ls-1 mb-1">
+                      Overview
+                    </h6> */}
+                  <h4 className="text-black mb-0">문의 관리</h4>
+                </div>
+              </CardHeader>
+              <CardBody>
+                <ListGroup>
+                  <ListGroupItemHeading>미처리 문의</ListGroupItemHeading>
+
+                  <ListGroupItem>이 사람 신고합니다 </ListGroupItem>
+                  <ListGroupItem>
+                    왜 아직 답글을 안 달아주시는 거죠?
+                  </ListGroupItem>
+                  <ListGroupItem>
+                    이 사람 한두번 이러는게 아닙니다 조치 취해주세요
+                  </ListGroupItem>
+                </ListGroup>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+
+        <Row className="mt-5">
+          <Col className="mb-5 mb-xl-0" xl="4">
             <Card className="shadow">
               <CardHeader className="bg-transparent">
                 <Row className="align-items-center">
                   <div className="col">
-                    <h6 className="text-uppercase text-light ls-1 mb-1">
+                    {/* <h6 className="text-uppercase text-light ls-1 mb-1">
                       Overview
-                    </h6>
-                    <h2 className="text-white mb-0">Sales value</h2>
+                    </h6> */}
+                    <h2 className="text-black mb-0">방문횟수</h2>
                   </div>
                   <div className="col">
                     <Nav className="justify-content-end" pills>
@@ -94,8 +264,9 @@ const Dashboard = (props) => {
               </CardHeader>
               <CardBody>
                 {/* Chart */}
+
                 <div className="chart">
-                  <Line
+                  <Bar
                     data={chartExample1[chartExample1Data]}
                     options={chartExample1.options}
                     getDatasetAtEvent={(e) => console.log(e)}
@@ -104,31 +275,116 @@ const Dashboard = (props) => {
               </CardBody>
             </Card>
           </Col>
-          <Col xl="4">
+          <Col className="mb-5 mb-xl-0" xl="4">
             <Card className="shadow">
               <CardHeader className="bg-transparent">
                 <Row className="align-items-center">
                   <div className="col">
-                    <h6 className="text-uppercase text-muted ls-1 mb-1">
-                      Performance
-                    </h6>
-                    <h2 className="mb-0">Total orders</h2>
+                    {/* <h6 className="text-uppercase text-light ls-1 mb-1">
+                      Overview
+                    </h6> */}
+                    <h2 className="text-black mb-0">가입자</h2>
+                  </div>
+                  <div className="col">
+                    <Nav className="justify-content-end" pills>
+                      <NavItem>
+                        <NavLink
+                          className={classnames("py-2 px-3", {
+                            active: activeNav === 1,
+                          })}
+                          href="#pablo"
+                          onClick={(e) => toggleNavs(e, 1)}
+                        >
+                          <span className="d-none d-md-block">Month</span>
+                          <span className="d-md-none">M</span>
+                        </NavLink>
+                      </NavItem>
+                      <NavItem>
+                        <NavLink
+                          className={classnames("py-2 px-3", {
+                            active: activeNav === 2,
+                          })}
+                          data-toggle="tab"
+                          href="#pablo"
+                          onClick={(e) => toggleNavs(e, 2)}
+                        >
+                          <span className="d-none d-md-block">Week</span>
+                          <span className="d-md-none">W</span>
+                        </NavLink>
+                      </NavItem>
+                    </Nav>
                   </div>
                 </Row>
               </CardHeader>
               <CardBody>
                 {/* Chart */}
+
                 <div className="chart">
                   <Bar
-                    data={chartExample2.data}
-                    options={chartExample2.options}
+                    data={chartExample1[chartExample1Data]}
+                    options={chartExample1.options}
+                    getDatasetAtEvent={(e) => console.log(e)}
+                  />
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col className="mb-5 mb-xl-0" xl="4">
+            <Card className="shadow">
+              <CardHeader className="bg-transparent">
+                <Row className="align-items-center">
+                  <div className="col">
+                    {/* <h6 className="text-uppercase text-light ls-1 mb-1">
+                      Overview
+                    </h6> */}
+                    <h2 className="text-black mb-0">게시글</h2>
+                  </div>
+                  <div className="col">
+                    <Nav className="justify-content-end" pills>
+                      <NavItem>
+                        <NavLink
+                          className={classnames("py-2 px-3", {
+                            active: activeNav === 1,
+                          })}
+                          href="#pablo"
+                          onClick={(e) => toggleNavs(e, 1)}
+                        >
+                          <span className="d-none d-md-block">Month</span>
+                          <span className="d-md-none">M</span>
+                        </NavLink>
+                      </NavItem>
+                      <NavItem>
+                        <NavLink
+                          className={classnames("py-2 px-3", {
+                            active: activeNav === 2,
+                          })}
+                          data-toggle="tab"
+                          href="#pablo"
+                          onClick={(e) => toggleNavs(e, 2)}
+                        >
+                          <span className="d-none d-md-block">Week</span>
+                          <span className="d-md-none">W</span>
+                        </NavLink>
+                      </NavItem>
+                    </Nav>
+                  </div>
+                </Row>
+              </CardHeader>
+              <CardBody>
+                {/* Chart */}
+
+                <div className="chart">
+                  <Bar
+                    data={chartExample1[chartExample1Data]}
+                    options={chartExample1.options}
+                    getDatasetAtEvent={(e) => console.log(e)}
                   />
                 </div>
               </CardBody>
             </Card>
           </Col>
         </Row>
-        <Row className="mt-5">
+        {/* <Row className="mt-5">
           <Col className="mb-5 mb-xl-0" xl="8">
             <Card className="shadow">
               <CardHeader className="border-0">
@@ -313,7 +569,7 @@ const Dashboard = (props) => {
               </Table>
             </Card>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </>
   );

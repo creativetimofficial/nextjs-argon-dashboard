@@ -12,8 +12,11 @@
     .navbar {
         border-width: 0 0 1px 0;
         border-style: solid;
+
     }
 
+    
+    
 
     // Navbar light
 
@@ -57,10 +60,10 @@
 
     // Navbar navigaton
 
-    .navbar-nav {
+    .navbar-nav  {
         margin-left: -$navbar-padding-x;
         margin-right: -$navbar-padding-x;
-
+        
 
         // Navbar link
 
@@ -68,9 +71,13 @@
             padding-left: $navbar-padding-x;
             padding-right: $navbar-padding-x;
             font-size: $navbar-nav-link-font-size;
+            color: white;
+
 
             &.active {
                 position: relative;
+                color: white;
+
 
                 &:before {
                     content: '';
@@ -79,6 +86,7 @@
                     top: $nav-link-padding-y;
                     bottom: $nav-link-padding-y;
                     border-left: 2px solid $primary;
+                    
                 }
             }
 
@@ -109,6 +117,7 @@
     .navbar-nav .nav-link {
         display: flex;
         align-items: center;
+
     }
 
     .navbar-nav .nav-link[data-toggle="collapse"] {

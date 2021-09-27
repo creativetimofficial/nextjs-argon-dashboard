@@ -21,9 +21,9 @@ import {
   UncontrolledTooltip,
 } from "reactstrap";
 // layout for this page
-import Admin from "layouts/Admin.js";
+import Admin from "../../layouts/Admin.js";
 // core components
-import Header from "components/Headers/Header.js";
+import Header from "../../components/Headers/Header.js";
 
 function Tables() {
   return (
@@ -810,7 +810,6 @@ function Tables() {
                       <PaginationLink
                         href="#pablo"
                         onClick={(e) => e.preventDefault()}
-                        tabIndex="-1"
                       >
                         <i className="fas fa-angle-left" />
                         <span className="sr-only">Previous</span>

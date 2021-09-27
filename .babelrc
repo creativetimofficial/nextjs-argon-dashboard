@@ -1,0 +1,23 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    [
+      "babel-plugin-styled-components",
+      {
+        "fileName": true,
+        "displayName": true,
+        "pure": true
+      }
+    ]
+  ],
+  "ignore": [
+    "server",
+    "node_modules",
+    "test",
+    "dist",
+    "distserver",
+    "config"
+  ]
+}

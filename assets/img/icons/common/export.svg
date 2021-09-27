@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.002" height="14">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;fill-rule:evenodd}
+        </style>
+    </defs>
+    <g id="사이트이동" transform="translate(-230.998 -27.984)">
+        <path id="패스_19" data-name="패스 19" class="cls-1" d="M66.464 252.267H71.2v4.759" transform="translate(172.796 -223.283)"/>
+        <path id="선_9" data-name="선 9" transform="translate(236.5 28.984)" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px" d="M7.5 0 0 7.516"/>
+        <path id="패스_22" data-name="패스 22" class="cls-1" d="M-57.489 271.5h-4.787v12h12v-4.786" transform="translate(294.274 -242.516)"/>
+    </g>
+</svg>

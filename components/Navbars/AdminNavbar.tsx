@@ -18,7 +18,13 @@ import {
   Media,
 } from "reactstrap";
 
-function AdminNavbar({ brandText }) {
+interface Props {
+  brandText: string;
+}
+
+
+function AdminNavbar(props: Props) {
+  const { brandText } = props;
   return (
     <>
       <Navbar className="navbar-top navbar-dark" expand="md" id="navbar-main">
@@ -28,7 +34,7 @@ function AdminNavbar({ brandText }) {
               {brandText}
             </a>
           </Link>
-          <Form className="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+          {/* <Form className="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
             <FormGroup className="mb-0">
               <InputGroup className="input-group-alternative">
                 <InputGroupAddon addonType="prepend">
@@ -39,7 +45,7 @@ function AdminNavbar({ brandText }) {
                 <Input placeholder="Search" type="text" />
               </InputGroup>
             </FormGroup>
-          </Form>
+          </Form> */}
           <Nav className="align-items-center d-none d-md-flex" navbar>
             <UncontrolledDropdown nav>
               <DropdownToggle className="pr-0" nav>
@@ -52,7 +58,7 @@ function AdminNavbar({ brandText }) {
                   </span>
                   <Media className="ml-2 d-none d-lg-block">
                     <span className="mb-0 text-sm font-weight-bold">
-                      Jessica Jones
+                      Admin
                     </span>
                   </Media>
                 </Media>

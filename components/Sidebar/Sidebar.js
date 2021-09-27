@@ -81,7 +81,7 @@ function Sidebar(props) {
   );
   return (
     <Navbar
-      className="navbar-vertical fixed-left navbar-light bg-white"
+      className="navbar-vertical fixed-left navbar-light "
       expand="md"
       id="sidenav-main"
     >
